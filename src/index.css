@@ -23,18 +23,16 @@ code {
 h4 {
   font-size: 0.85rem;
   color: #342914;
+  font-weight: 600;
 }
 h3 {
-  font-size: 1.5rem;
-  color: rgb(56, 56, 56);
+  font-size: 1.55rem;
+  color: #342914;
+  font-weight: 700;
   line-height: 2.5rem;
   margin: 2rem 0rem;
 }
 a {
   color: rgb(56, 56, 56);
   text-decoration: none;
-}
-.icon_size {
-  font-size: 1.5rem;
-  margin-bottom: 0.2rem;
 }

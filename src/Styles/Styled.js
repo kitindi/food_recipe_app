@@ -54,7 +54,7 @@ export const Grid = styled.div`
 export const List = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin: 1.75rem 0rem;
 `;
 export const CuisineCard = styled.div`
   img {
@@ -79,9 +79,25 @@ export const SLink = styled(NavLink)`
   align-items: center;
   text-align: center;
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 6rem;
+  width: 6rem;
+  transform: scale(0.9);
   margin: 0.5rem;
   background-color: #f4cb53;
   color: #fff;
+
+  svg {
+    font-size: 1.75rem;
+    margin-bottom: 0.3rem;
+  }
+  &.active {
+    background-color: #68c087;
+    color: #fff;
+    svg {
+      color: #fff;
+    }
+    h4 {
+      color: #fff;
+    }
+  }
 `;
