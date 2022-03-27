@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
@@ -40,4 +41,47 @@ export const Gradient = styled.div`
   width: 100%;
   height: 100;
   background-color: linea-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.6));
+`;
+
+// Cusine Styles
+
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
+`;
+
+export const List = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+`;
+export const CuisineCard = styled.div`
+  img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  h4 {
+    text-align: center;
+    padding: 1rem;
+  }
+`;
+
+// Link styles
+
+export const SLink = styled(NavLink)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 0.5rem;
+  background-color: #f4cb53;
+  color: #fff;
 `;
