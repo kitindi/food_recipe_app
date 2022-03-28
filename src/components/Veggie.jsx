@@ -32,7 +32,15 @@ const Veggie = () => {
 
         <Splide
           options={{
-            perPage: 3,
+            perPage: 4,
+            breakpoints: {
+              767: {
+                perPage: 2,
+              },
+              640: {
+                perPage: 1,
+              },
+            },
             arrows: false,
             pagination: false,
             drag: "free",

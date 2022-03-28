@@ -14,23 +14,6 @@ const Footer = () => {
     <FooterWrapper>
       <FooterDiv>
         <div>
-          <p>Help</p>
-          <p>About Us</p>
-          <p>Jobs</p>
-          <p>Privacy Notice</p>
-          <p>
-            <span>
-              <IoLogoTwitter />
-            </span>
-            <span>
-              <IoLogoInstagram />
-            </span>
-            <span>
-              <IoLogoFacebook />
-            </span>
-          </p>
-        </div>
-        <div>
           <Center>
             <GiKnifeFork />
             <Logo to={"/"}>
@@ -39,7 +22,6 @@ const Footer = () => {
           </Center>
           <p>Find recipes to use ingredients you already have</p>
         </div>
-        <div></div>
       </FooterDiv>
       <hr />
       <Copy>
@@ -78,10 +60,14 @@ const Logo = styled(Link)`
   text-decoration: none;
   font-size: 2rem;
   font-weight: 500;
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 const FooterWrapper = styled.footer`
   background-color: #fafafa;
-  padding: 1.2rem 0rem;
+  text-align: center;
+  padding: 2rem 0rem;
   width: 100%;
   hr {
     color: #fafafa;
@@ -90,11 +76,11 @@ const FooterWrapper = styled.footer`
 const FooterDiv = styled.div`
   padding: 2rem 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
   p {
