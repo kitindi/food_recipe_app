@@ -6,6 +6,7 @@ import Banner from "./components/Banner";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { GiKnifeFork } from "react-icons/gi";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         </Banner>
         <Category />
         <Pages />
+        <Footer />
       </BrowserRouter>
     </div>
   );
