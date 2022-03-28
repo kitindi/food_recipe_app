@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
@@ -45,7 +46,7 @@ export const Gradient = styled.div`
 
 // Cusine Styles
 
-export const Grid = styled.div`
+export const Grid = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
@@ -85,6 +86,17 @@ export const SLink = styled(NavLink)`
   margin: 0.5rem;
   background-color: #f4cb53;
   color: #fff;
+
+  @media (max-width: 768px) {
+    height: 5rem;
+    width: 5rem;
+    svg {
+      font-size: 1.2rem;
+    }
+    h4 {
+      font-size: 0.75rem;
+    }
+  }
 
   svg {
     font-size: 1.75rem;

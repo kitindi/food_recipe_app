@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
 import { Grid, CuisineCard } from "../Styles/Styled";
@@ -22,12 +21,19 @@ const Cuisine = () => {
     setCuisine(recipes.results);
   };
   return (
-    <Grid>
+    <Grid
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.1 }}
+    >
       {cuisine.map((item) => {
         return (
           <CuisineCard key={item.id}>
-            <img src={item.image} alt="coiusine" />
-            <h4>{item.title}</h4>
+            <Link to={`/recipe/${item.id}`}>
+              <img src={item.image} alt="coiusine" />
+              <h4>{item.title}</h4>
+            </Link>
           </CuisineCard>
         );
       })}

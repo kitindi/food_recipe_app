@@ -24,9 +24,12 @@ const Search = () => {
 };
 
 const FormStyle = styled.form`
-  margin: 1.5rem 20rem;
+  margin: 1.5rem 2.5rem;
   position: relative;
-  width: 100%;
+  width: 60%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   input {
     width: 100%;
     border: none;
