@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/food_recipe_app/static/css/main.00621e8d.css",
-    "main.js": "/food_recipe_app/static/js/main.b5d2812a.js",
-    "static/media/banner.jpg": "/food_recipe_app/static/media/banner.f2bea017f11628552e06.jpg",
-    "index.html": "/food_recipe_app/index.html",
-    "main.00621e8d.css.map": "/food_recipe_app/static/css/main.00621e8d.css.map",
-    "main.b5d2812a.js.map": "/food_recipe_app/static/js/main.b5d2812a.js.map"
+    "main.css": "/delicious/static/css/main.00621e8d.css",
+    "main.js": "/delicious/static/js/main.2d5e61f8.js",
+    "static/media/banner.jpg": "/delicious/static/media/banner.f2bea017f11628552e06.jpg",
+    "index.html": "/delicious/index.html",
+    "main.00621e8d.css.map": "/delicious/static/css/main.00621e8d.css.map",
+    "main.2d5e61f8.js.map": "/delicious/static/js/main.2d5e61f8.js.map"
   },
   "entrypoints": [
     "static/css/main.00621e8d.css",
-    "static/js/main.b5d2812a.js"
+    "static/js/main.2d5e61f8.js"
   ]
 }
