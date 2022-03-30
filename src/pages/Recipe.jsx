@@ -10,7 +10,7 @@ const Recipe = () => {
 
   const fetchDetail = async (id) => {
     const data = await fetch(
-      `https:api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_KEY}`
+      `https:api.spoonacular.com/recipes/${id}/information?apiKey=5ffe37a5321b4725bf34cbd8e567a945`
     );
     const recipeDetail = await data.json();
 
@@ -23,10 +23,10 @@ const Recipe = () => {
 
   return (
     <DetailWrapper>
-      <div>
+      <ImageDiv>
         <h2>{fetchedDetail.title}</h2>
         <img src={fetchedDetail.image} alt="" />
-      </div>
+      </ImageDiv>
       <Info>
         <StyledButton
           className={activeTab === "instructions" ? "active" : ""}
@@ -72,10 +72,16 @@ const Recipe = () => {
 };
 
 const DetailWrapper = styled.div`
-  margin-top: 10rem;
+  /* padding: 0rem 10rem; */
+  margin-top: 2.5rem;
   margin-bottom: 5rem;
-  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  justify-content: center;
   @media (max-width: 768px) {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -84,9 +90,7 @@ const DetailWrapper = styled.div`
     background-color: #313131;
     color: #fff;
   }
-  h2 {
-    margin-bottom: 2rem;
-  }
+
   li {
     font-size: 1.05rem;
     font-weight: 500;
@@ -97,6 +101,14 @@ const DetailWrapper = styled.div`
   }
 `;
 
+const ImageDiv = styled.div`
+  img {
+    width: 100%;
+  }
+  h2 {
+    margin-bottom: 2rem;
+  }
+`;
 const StyledButton = styled.button`
   padding: 1rem 2rem;
   color: #313131;
