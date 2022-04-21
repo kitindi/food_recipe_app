@@ -1,11 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  IoLogoInstagram,
-  IoLogoFacebook,
-  IoLogoTwitter,
-  IoMdHeart,
-} from "react-icons/io";
+import { IoMdHeart } from "react-icons/io";
 import { GiKnifeFork } from "react-icons/gi";
 import { Link } from "react-router-dom";
 
