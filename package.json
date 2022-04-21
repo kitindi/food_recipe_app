@@ -1,6 +1,5 @@
 {
   "name": "delicious",
-  "homepage": "https://cookfy.github.io/delicious/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
